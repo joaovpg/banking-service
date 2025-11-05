@@ -9,8 +9,9 @@ import org.jboss.resteasy.reactive.RestResponse;
 
 @Path("/agencias")
 public class AgenciaController {
-    private AgenciaService agenciaService;
-    AgenciaController (AgenciaService agenciaService) {
+
+    private final AgenciaService agenciaService;
+    public AgenciaController (AgenciaService agenciaService) {
         this.agenciaService = agenciaService;
     }
 
